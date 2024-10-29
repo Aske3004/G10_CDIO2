@@ -7,28 +7,23 @@ public class Balance {
         this.balance = 1000;
     }
 
-    public int addToBalance(int amount){
+    public void addToBalance(int amount){
         if (amount > 0){
             balance += amount;
-            return balance;
         } else {
-            System.out.println("Error! Amount can not be negative.")
-            return balance;
+            System.out.println("Error! Amount can not be negative.");
         }
     }
 
-    public int withdrawFromBalance(int amount){
+    public void withdrawFromBalance(int amount){
         if (amount > 0){
             if (balance - amount >= 0){
                 balance -= amount;
-                return balance;
             } else {
                 System.out.println("Error! Not enough money in account.");
-                return balance;
             }
         } else {
-            System.out.println("Error! Amount can not be negative.")
-            return balance;
+            System.out.println("Error! Amount can not be negative.");
         }
     }
 
