@@ -16,7 +16,7 @@ public class Board{
             boardbalance.put(11 , -50);
             boardbalance.put(12 , 650);
         //updating players balance and returns it 
-        if(boardbalance.get(theDiceRoll)>0){
+        if (boardbalance.get(theDiceRoll)>0){
             player.playerBalance.addToBalance(boardbalance.get(theDiceRoll));
         } else if(boardbalance.get(theDiceRoll)<0){
             player.playerBalance.withdrawFromBalance(Math.abs(boardbalance.get(theDiceRoll)));
@@ -37,6 +37,6 @@ public class Board{
         fieldStorys.put(10 , "The Werewall appears! You lose 80 gold coins but gain an extra turn as the werewolf howls.");
         fieldStorys.put(11 , "You fell into a deep pit and need help to get up, you paid 50 ");
         fieldStorys.put(12 , "You found gold in the mauntian and sold it for 650 gold coins!!.... damm you rich");
-        return fieldStory.get(theDiceroll);
+        return fieldStorys.get(theDiceroll);
     }
 }
