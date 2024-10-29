@@ -1,9 +1,7 @@
 public class Player {
-    String playerName;
-    Balance playerBalance;
+    public Balance playerBalance;
 
-    public Player(String pName){
-        this.playerName = pName;
+    public Player(){
         playerBalance = new Balance();
     }
 }

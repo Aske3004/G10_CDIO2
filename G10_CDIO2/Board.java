@@ -2,7 +2,7 @@ import java.util.HashMap;
 public class Board{
     // creating a hashmap for the driffert values and a hashmap 
     //for the bankbalance opdates corresponding to the different values.
-    public static int boardBalanceUpdate(Player player, int theDiceRoll){
+    public int boardBalanceUpdate(Player player, int theDiceRoll){
         HashMap<Integer,Integer> boardbalance = new HashMap<>();
             boardbalance.put(2 , 250);
             boardbalance.put(3 , -100);
@@ -24,7 +24,7 @@ public class Board{
         return player.playerBalance.getBalance();
 
     }
-    public static String fieldstory(int theDiceroll){
+    public String fieldstory(int theDiceroll){
         HashMap<Integer,String> fieldStorys = new HashMap<>();
         fieldStorys.put(2 , "You climbed the Tower and found a treasure at the top. You gain 250 gold coins!");
         fieldStorys.put(3 , "You stumbled into a deep Crater and struggled to get out. You lose 100 gold coins.");

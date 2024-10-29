@@ -2,16 +2,15 @@ import java.util.Random;
 
 public class Die {
     public int dieValue;
-    String dieName = "";
     Random random = new Random();
-    int highestRoll;
+    private int highestRoll;
 
-    public Die(String dName, int theHighest){
-        dieName = dName;
+    public Die(int theHighest){
         highestRoll=theHighest;
     }
 
-    public void rollDie(){
+    public int rollDie(){
         dieValue = random.nextInt(highestRoll) + 1;
+        return dieValue;
     }
 }
