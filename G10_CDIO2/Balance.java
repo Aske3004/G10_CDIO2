@@ -1,9 +1,23 @@
 public class Balance {
-    String playerName;
-    int balance;
+    private String playerName;
+    private int balance;
 
-    public Balance(String pName){
-        this.playerName = pName;
+    public Balance(String playerName){
+        this.playerName = playerName;
         this.balance = 1000;
+    }
+
+    public int addToBalance(int amount){
+        balance += amount;
+        return balance;
+    }
+
+    public int withdrawFromBalance(int amount){
+        balance -= amount;
+        return balance;
+    }
+
+    public int getBalance(){
+        return balance;
     }
 }
