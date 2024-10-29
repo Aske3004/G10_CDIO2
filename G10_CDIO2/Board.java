@@ -20,10 +20,7 @@ public class Board{
             player.playerBalance.addToBalance(boardbalance.get(theDiceRoll));
         } else if(boardbalance.get(theDiceRoll)<0){
             player.playerBalance.withdrawFromBalance(Math.abs(boardbalance.get(theDiceRoll)));
-        } else{
-
-        }
-        
+        } 
         return player.playerBalance.getBalance();
 
     }
