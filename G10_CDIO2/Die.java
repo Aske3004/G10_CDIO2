@@ -1,3 +1,5 @@
+//our Die class from the last game, with the dieValue being saved and the int highestroll being the highest value the die can be
+//which means for this game we just set it to 6 so it functions like a normal 6 sided die.
 import java.util.Random;
 
 public class Die {
