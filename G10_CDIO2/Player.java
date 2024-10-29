@@ -4,6 +4,6 @@ public class Player {
 
     public Player(String pName){
         this.playerName = pName;
-        playerBalance = new Balance(pName);
+        playerBalance = new Balance();
     }
 }

@@ -1,9 +1,7 @@
 public class Balance {
-    private String playerName;
     private int balance;
 
-    public Balance(String playerName){
-        this.playerName = playerName;
+    public Balance(){
         this.balance = 1000;
     }
 
