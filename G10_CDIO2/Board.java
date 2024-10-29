@@ -2,7 +2,7 @@ import java.util.HashMap;
 public class Board{
     // creating a hashmap for the driffert values and a hashmap 
     //for the bankbalance opdates corresponding to the different values.
-    public static int boardBalanceUpdate(Player player, int theDiceroll){
+    public static int boardBalanceUpdate(Player player, int theDiceRoll){
         HashMap<Integer,Integer> boardbalance = new HashMap<>();
             boardbalance.put(2 , 250);
             boardbalance.put(3 , -100);
@@ -16,8 +16,8 @@ public class Board{
             boardbalance.put(11 , -50);
             boardbalance.put(12 , 650);
         //updating players balance and returns it 
-        player.blance += boardbalance.get(theDieRoll);
-        return player.blance;
+        player.balance += boardbalance.get(theDiceRoll);
+        return player.balance;
 
     }
     public static String fieldstory(int theDiceroll){
@@ -31,7 +31,7 @@ public class Board{
         fieldStorys.put(8 , "In the Black Cave, shadows steal some of your belongings. You lose 70 gold coins.");
         fieldStorys.put(9 , "You discover a friendly village with Huts in the Mountain and earn 60 gold coins selling goods.");
         fieldStorys.put(10 , "The Werewall appears! You lose 80 gold coins but gain an extra turn as the werewolf howls.");
-        fieldStorys.put(11 , -"You fell into a deep pit and need help to get up, you paid 50 ");
+        fieldStorys.put(11 , "You fell into a deep pit and need help to get up, you paid 50 ");
         fieldStorys.put(12 , "You found gold in the mauntian and sold it for 650 gold coins!!.... damm you rich");
         return fieldStory.get(theDiceroll);
     }
