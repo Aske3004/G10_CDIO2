@@ -8,13 +8,28 @@ public class Balance {
     }
 
     public int addToBalance(int amount){
-        balance += amount;
-        return balance;
+        if (amount > 0){
+            balance += amount;
+            return balance;
+        } else {
+            System.out.println("Error! Amount can not be negative.")
+            return balance;
+        }
     }
 
     public int withdrawFromBalance(int amount){
-        balance -= amount;
-        return balance;
+        if (amount > 0){
+            if (balance - amount >= 0){
+                balance -= amount;
+                return balance;
+            } else {
+                System.out.println("Error! Not enough money in account.");
+                return balance;
+            }
+        } else {
+            System.out.println("Error! Amount can not be negative.")
+            return balance;
+        }
     }
 
     public int getBalance(){
