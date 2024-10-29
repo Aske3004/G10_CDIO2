@@ -60,7 +60,7 @@ public class Game {
             }
 
             //When the winning criterias has been met we break out of the loop and run these next lines to display the winner
-            //of the game. We also simulate a test of 1000 dice throws, to see if the dice are working correctly.
+            //of the game.
             if(player1Won){
                 System.out.println("Player1 has reached " + player1.playerBalance.getBalance() + " gold coins, and has therefore won the game!");
             } 
