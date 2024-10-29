@@ -8,7 +8,7 @@ public class Balance {
     }
 
     public Boolean addToBalance(int amount){
-        if (amount > 0){
+        if (amount >= 0){
             balance += amount;
             return true;
         } else {
@@ -18,13 +18,13 @@ public class Balance {
     }
 
     public Boolean withdrawFromBalance(int amount){
-        if (amount > 0){
+        if (amount >= 0){
             if (balance - amount >= 0){
                 balance -= amount;
                 return true;
             } else {
-                System.out.println("Error! Not enough money in account.");
-                return false;
+                balance = 0;
+                return true;
             }
         } else {
             System.out.println("Error! Amount can not be negative.");
