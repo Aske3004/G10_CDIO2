@@ -1,7 +1,7 @@
 import java.util.Random;
 
 public class Die {
-    public int dieValue;
+    private int dieValue;
     Random random = new Random();
     private int highestRoll;
 
