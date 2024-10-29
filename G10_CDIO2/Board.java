@@ -16,8 +16,15 @@ public class Board{
             boardbalance.put(11 , -50);
             boardbalance.put(12 , 650);
         //updating players balance and returns it 
-        player.balance += boardbalance.get(theDiceRoll);
-        return player.balance;
+        if(boardbalance.get(theDiceRoll)>0){
+            player.playerBalance.addToBalance(boardbalance.get(theDiceRoll));
+        } else if(boardbalance.get(theDiceRoll)<0){
+            player.playerBalance.withdrawFromBalance(Math.abs(boardbalance.get(theDiceRoll)));
+        } else{
+
+        }
+        
+        return player.playerBalance.getBalance();
 
     }
     public static String fieldstory(int theDiceroll){
