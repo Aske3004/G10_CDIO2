@@ -35,8 +35,8 @@ public class Board{
         fieldStorys.put(8 , "In the Black Cave, shadows steal some of your belongings. You lose 70 gold coins.");
         fieldStorys.put(9 , "You discover a friendly village with Huts in the Mountain and earn 60 gold coins selling goods.");
         fieldStorys.put(10 , "The Werewall appears! You lose 80 gold coins but gain an extra turn as the werewolf howls.");
-        fieldStorys.put(11 , "You fell into a deep pit and need help to get up, you paid 50 ");
-        fieldStorys.put(12 , "You found gold in the mauntian and sold it for 650 gold coins!!.... damm you rich");
+        fieldStorys.put(11 , "You fell into a deep pit and need help to get up, you paid 50 gold coins.");
+        fieldStorys.put(12 , "You found gold in the mountain and sold it for 650 gold coins!!.... damm you rich");
         return fieldStorys.get(theDiceroll);
     }
 }
